@@ -1,0 +1,20 @@
+body {
+    background-image: url(/images/schem_tile.png);
+}
+
+.nav-extended {
+    background-color: #003459;
+}
+
+.nav-content {
+    background-color: #ae391a;
+}
+
+.brand-logo {
+    text-align: center;
+}
+
+#tagline {
+    text-align: center;
+    font-weight: bold;
+}
