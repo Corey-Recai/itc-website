@@ -14,13 +14,14 @@
 </head>
 
 <body>
-  <div id="tagline" class="container white black-text"><span>Serving the New York Metropolitan Area since 1979</span></div>
+  <div id="tagline" class="container white black-text bold"><span>Serving the New York Metropolitan Area since
+      1979</span></div>
   <nav class="nav-extended">
     <div class="nav-wrapper center-align">
       <div class="nav-divider"></div>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <div class="nav-spacer hide-on-med-and-down"></div>
-      <a href="#"><img id="logo-img" class="responsive-img" src="/images/logo(3).png" alt=""></a>
+      <a href="#"><img id="logo-img" class="responsive-img" src="/images/logo-main.png" alt=""></a>
     </div>
     <div class="nav-content center-align">
       <div class="nav-divider hide-on-large-only "></div>
@@ -35,11 +36,11 @@
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a class="active" href="#home">HOME</a></li>
-    <li><a href="#services">SERVICES</a></li>
-    <li><a href="#projects">PROJECTS</a></li>
-    <li><a href="#careers">CAREERS</a></li>
-    <li><a href="#contact">CONTACT US</a></li>
+    <li class="tab"><a class="active" href="#home">HOME</a></li>
+    <li class="tab"><a href="#services">SERVICES</a></li>
+    <li class="tab"><a href="#projects">PROJECTS</a></li>
+    <li class="tab"><a href="#careers">CAREERS</a></li>
+    <li class="tab"><a href="#contact">CONTACT US</a></li>
   </ul>
 
   <div class="container white">
@@ -58,13 +59,8 @@
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <!-- End Load Materialize Scripts, Font Awesome and jQuery-->
   <!-- Load Document Scripts -->
-  <script>
-    M.AutoInit();
-    // Ajax load main content into page
-    $(document).ready(function () {
-      $("#home").load("home.html");
-    });
-  </script>
+  <script src='/script.js'></script>
+  <script src='/audio-player.js'></script>
   <!-- End Load Document Scripts -->
 </body>
 
