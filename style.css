@@ -6,15 +6,39 @@ body {
     background-color: #003459;
 }
 
+.nav-divider {
+    height: 0.5rem;
+    background-color: #ae391a;
+}
+
+.nav-spacer {
+    height: 5.5rem;
+}
+
 .nav-content {
     background-color: #ae391a;
 }
 
-.brand-logo {
-    text-align: center;
+#logo-img {
+    max-width: 80%;
+    z-index: 1;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #tagline {
     text-align: center;
     font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#body-img {
+    z-index: 1;
+}
+
+#banner-img {
+    width: 100%;
+    height: auto;
 }

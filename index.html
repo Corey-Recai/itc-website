@@ -2,61 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>ITC Services | Your Single Source for HVAC Controls, Wireless Solutions, Security, Sub-Metering and
-        Mechanical Systems</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>ITC Services | Your Single Source for HVAC Controls, Wireless Solutions, Security, Sub-Metering and
+    Mechanical Systems</title>
 </head>
 
 <body>
-    <div id="tagline" class="container white black-text"><span>Serving the New York Metropolitan Area since 1979</span></div>
-    <nav class="nav-extended">
-        <div class="nav-wrapper center-align">
-          <a class="container" href="#"><img src="/images/logo(3).png" alt=""></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent">
-            <li class="tab"><a href="#test1">Test 1</a></li>
-            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
-            <li class="tab"><a href="#test4">Test 4</a></li>
-          </ul>
-        </div>
-      </nav>
-    
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    
-      <div id="test1" class="col s12">Test 1</div>
-      <div id="test2" class="col s12">Test 2</div>
-      <div id="test3" class="col s12">Test 3</div>
-      <div id="test4" class="col s12">Test 4</div>
+  <div id="tagline" class="container white black-text"><span>Serving the New York Metropolitan Area since 1979</span></div>
+  <nav class="nav-extended">
+    <div class="nav-wrapper center-align">
+      <div class="nav-divider"></div>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <div class="nav-spacer hide-on-med-and-down"></div>
+      <a href="#"><img id="logo-img" class="responsive-img" src="/images/logo(3).png" alt=""></a>
+    </div>
+    <div class="nav-content center-align">
+      <div class="nav-divider hide-on-large-only "></div>
+      <div class="tabs tabs-transparent hide-on-med-and-down">
+        <li class="tab"><a class="active" href="#home">HOME</a></li>
+        <li class="tab"><a href="#services">SERVICES</a></li>
+        <li class="tab"><a href="#projects">PROJECTS</a></li>
+        <li class="tab"><a href="#careers">CAREERS</a></li>
+        <li class="tab"><a href="#contact">CONTACT US</a></li>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Load Materialize Scripts, Font Awesome and jQuery-->
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Load Font Awesome -->
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <!-- End Load Materialize Scripts, Font Awesome and jQuery-->
-    <!-- Load Document Scripts -->
-    <script>
-        M.AutoInit();
-        // Ajax load main content into page
-        $(document).ready(function () {
-            $("#main").load("project-cards.html");
-        });
-    </script>
-    <!-- End Load Document Scripts -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a class="active" href="#home">HOME</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#careers">CAREERS</a></li>
+    <li><a href="#contact">CONTACT US</a></li>
+  </ul>
+
+  <div class="container white">
+    <div id="home" class="row"></div>
+    <div id="services" class="col s12">Test 2</div>
+    <div id="projects" class="col s12">Test 3</div>
+    <div id="careers" class="col s12">Test 4</div>
+    <div id="contact" class="col s12">Test 5</div>
+  </div>
+
+  <!-- Load Materialize Scripts, Font Awesome and jQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Load Font Awesome -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <!-- End Load Materialize Scripts, Font Awesome and jQuery-->
+  <!-- Load Document Scripts -->
+  <script>
+    M.AutoInit();
+    // Ajax load main content into page
+    $(document).ready(function () {
+      $("#home").load("home.html");
+    });
+  </script>
+  <!-- End Load Document Scripts -->
 </body>
 
 </html>
