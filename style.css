@@ -1,5 +1,5 @@
 html {
-   font-size: smaller;
+    font-size: small;
 }
 
 body {
@@ -10,11 +10,16 @@ a {
     color: #ae391a;
 }
 
+.page-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .text-link:hover {
     text-decoration: underline;
 }
 
-.nav-extended {
+.itc-blue-background {
     background-color: #003459;
 }
 
@@ -38,6 +43,17 @@ a {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#itc-car {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.rtl {
+    direction: rtl;
 }
 
 #tagline {
@@ -84,6 +100,10 @@ a {
     color: #003459;
 }
 
+.itc-green {
+    color: rgb(0, 102, 51);
+}
+
 .no-border {
     border-bottom: 0px solid;
 }
@@ -113,16 +133,21 @@ input[type=range]::-ms-thumb {
     background-color: #003459;
 }
 
+.widgets {
+    font-size: smaller;
+}
+
 #muted {
     cursor: pointer;
 }
 
-#v-flag{
+#v-flag {
     background-image: url('/images/v-flag.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .no-padding {
-   padding: 0px;
+    padding: 0px;
 }
