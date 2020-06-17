@@ -2,10 +2,12 @@ function startAudio() {
   if ($('#play-pause').html() == "play_arrow") {
     $('#itc-radio').trigger("play");
     $('#play-pause').html('pause');
+    $('#play-pause-button').removeClass('pulse');
   } else {
     if ($('#play-pause').html() == "pause") {
       $('#itc-radio').trigger("pause");
       $('#play-pause').html('play_arrow');
+      $('#play-pause-button').addClass('pulse');
     }
   }
 

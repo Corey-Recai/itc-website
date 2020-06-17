@@ -29,26 +29,26 @@
     <div class="nav-content center-align">
       <div class="nav-divider hide-on-large-only "></div>
       <div class="tabs tabs-transparent hide-on-med-and-down">
-        <li class="tab"><a class="active" href="#home">HOME</a></li>
-        <li class="tab"><a href="#services">SERVICES</a></li>
-        <li class="tab"><a href="#projects">PROJECTS</a></li>
-        <li class="tab"><a href="#careers">CAREERS</a></li>
-        <li class="tab"><a href="#contact">CONTACT US</a></li>
+        <li class="tab"><a id="home-link" class="active" href="#home">HOME</a></li>
+        <li class="tab"><a id="services-link" href="#services">SERVICES</a></li>
+        <li class="tab"><a id="projects-link" href="#projects">PROJECTS</a></li>
+        <li class="tab"><a id="careers-link" href="#careers">CAREERS</a></li>
+        <li class="tab"><a id="contact-link" href="#contact">CONTACT US</a></li>
       </div>
     </div>
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li class="tab"><a class="active" href="#home">HOME</a></li>
-    <li class="tab"><a href="#services">SERVICES</a></li>
-    <li class="tab"><a href="#projects">PROJECTS</a></li>
-    <li class="tab"><a href="#careers">CAREERS</a></li>
-    <li class="tab"><a href="#contact">CONTACT US</a></li>
+    <li class="tab"><a onclick="clickHome()">HOME</a></li>
+    <li class="tab"><a onclick="clickServices()">SERVICES</a></li>
+    <li class="tab"><a onclick="clickProjects()">PROJECTS</a></li>
+    <li class="tab"><a onclick="clickCareers()">CAREERS</a></li>
+    <li class="tab"><a onclick="clickContact()">CONTACT US</a></li>
   </ul>
 
   <div class="container white">
     <div id="home" class="row"></div>
-    <div id="services" class="col s12">Test 2</div>
+    <div id="services" class="row"></div>
     <div id="projects" class="col s12">Test 3</div>
     <div id="careers" class="col s12">Test 4</div>
     <div id="contact" class="col s12">Test 5</div>
