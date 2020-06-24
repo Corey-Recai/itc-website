@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-image: url("/images/background(3).png");
+    background-image: url("/images/background(3).png");   
 }
 
 a {
@@ -87,6 +87,10 @@ footer {
     margin-block-end: 0em;
 }
 
+.no-margin {
+    margin: 0rem;
+}
+
 .body-img-1 {
     padding-top: 1rem;
     ;
@@ -100,6 +104,13 @@ footer {
     border-bottom: 0px solid;
 }
 
+.no-borders {
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+    border-right: 0px solid;
+    border-left: 0px solid;
+}
+
 /* COLORS */
 .itc-blue-background {
     background-color: #01367a;
@@ -110,7 +121,7 @@ footer {
 }
 
 .itc-blue {
-    color: #003459;
+    color: #01367a;
 }
 
 .itc-green {
@@ -122,32 +133,36 @@ footer {
 }
 
 .itc-white {
-    background-color:rgba(255, 255, 255, 0.95);
+    background-color: rgba(150, 150, 150, 0.1);
+}
+
+.itc-white-container {
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 /* BUTTON ATTRIBUTES */
 .btn-itc-blue {
-    background-color: #003459;
+    background-color: #01367a;
 }
 
 .btn-itc-blue:hover {
-    background-color: #003459;
+    background-color: #01367a;
 }
 
 .btn-itc-blue:enabled {
-    background-color: #003459;
+    background-color: #01367a;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    background-color: #003459;
+    background-color: #01367a;
 }
 
 input[type=range]::-moz-range-thumb {
-    background-color: #003459;
+    background-color: #01367a;
 }
 
 input[type=range]::-ms-thumb {
-    background-color: #003459;
+    background-color: #01367a;
 }
 
 /* WIDGET ATTRIBUTES */
@@ -160,7 +175,7 @@ input[type=range]::-ms-thumb {
 }
 
 .body-widget-1 {
-    padding-top: 5%;
+    padding-top: 1%;
 }
 
 .body-widget-2 {
@@ -187,11 +202,11 @@ input[type=range]::-ms-thumb {
     height: 40vh;
 }
 
-#sticky-widget {
+/* #sticky-widget {
     position: -webkit-fixed;
     position: fixed;
     padding-right: 23.5%;
-}
+} */
 
 .no-padding {
     padding: 0px;
@@ -202,6 +217,10 @@ input[type=range]::-ms-thumb {
     height: 100%;
 }
 
+.project-img {
+    height: 100%;
+    width: 100%;
+}
 /* TEXT ATTRIBUTES */
 .h5 {
     font-size: medium;
@@ -218,6 +237,24 @@ input[type=range]::-ms-thumb {
 
 .shadow {
     text-shadow: 2px 2px 5px black;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image:hover .project-title {
+    opacity: 1;
 }
 
 /* PDF OBJECT ATTRIBUTES*/
