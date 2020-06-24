@@ -1,47 +1,45 @@
+/* HTML ATTRIBUTES */
 html {
-    font-size: small;
+    font-size: medium;
 }
 
 body {
-    background-image: url(/images/background.png);
+    background-image: url("/images/background(3).png");
 }
 
 a {
     color: #ae391a;
 }
 
-footer {
-    font-size: smaller;
-}
-
-.page-container {
-    padding-left: 5%;
-    padding-right: 5%;
+.text-link {
+    cursor: pointer;
 }
 
 .text-link:hover {
     text-decoration: underline;
 }
 
-.itc-blue-background {
-    background-color: #003459;
+.union-link {
+    color: black;
 }
 
-.itc-light-blue-background {
-    background-color: #c9ddec;
+/* NAVIGATION ATTRIBUTES */
+#tagline {
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 .nav-divider {
     height: 0.5rem;
-    background-color: #ae391a;
+    background-color: #967f39;
 }
 
 .nav-spacer {
-    height: 5.5rem;
+    height: 6rem;
 }
 
 .nav-content {
-    background-color: #ae391a;
+    background-color: #967f39;
 }
 
 #logo-img {
@@ -51,6 +49,11 @@ footer {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* FOOTER ATTRIBUTES */
+footer {
+    font-size: smaller;
 }
 
 #itc-car {
@@ -65,9 +68,10 @@ footer {
     direction: rtl;
 }
 
-#tagline {
-    text-align: center;
-    font-size: 0.9rem;
+/* BODY ATTRIBUTES */
+.page-container {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #banner-img {
@@ -92,17 +96,17 @@ footer {
     padding-right: 1rem;
 }
 
-.bold {
-    font-weight: bold;
+.no-border {
+    border-bottom: 0px solid;
 }
 
-.outline {
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: white;
+/* COLORS */
+.itc-blue-background {
+    background-color: #01367a;
 }
 
-.shadow {
-    text-shadow: 2px 2px 5px black;
+.itc-light-blue-background {
+    background-color: #c9ddec;
 }
 
 .itc-blue {
@@ -113,11 +117,15 @@ footer {
     color: rgb(0, 102, 51);
 }
 
-.no-border {
-    border-bottom: 0px solid;
+.itc-orange {
+    color: rgb(255, 121, 0);
 }
 
+.itc-white {
+    background-color:rgba(255, 255, 255, 0.95);
+}
 
+/* BUTTON ATTRIBUTES */
 .btn-itc-blue {
     background-color: #003459;
 }
@@ -142,8 +150,21 @@ input[type=range]::-ms-thumb {
     background-color: #003459;
 }
 
+/* WIDGET ATTRIBUTES */
+#home-widget-row-1 {
+    font-size: smaller;
+}
+
 .widgets {
     font-size: smaller;
+}
+
+.body-widget-1 {
+    padding-top: 5%;
+}
+
+.body-widget-2 {
+    padding-top: 10%;
 }
 
 #muted {
@@ -157,6 +178,55 @@ input[type=range]::-ms-thumb {
     background-position: center;
 }
 
+.guage {
+    background-image: url('/images/gauge.jpg');
+    background-size: cover;
+}
+
+.spacer {
+    height: 40vh;
+}
+
+#sticky-widget {
+    position: -webkit-fixed;
+    position: fixed;
+    padding-right: 23.5%;
+}
+
 .no-padding {
     padding: 0px;
+}
+
+/* IMAGE ATTRIBUTES*/
+.full-height-img {
+    height: 100%;
+}
+
+/* TEXT ATTRIBUTES */
+.h5 {
+    font-size: medium;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.outline {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+}
+
+.shadow {
+    text-shadow: 2px 2px 5px black;
+}
+
+/* PDF OBJECT ATTRIBUTES*/
+.pdfobject-container {
+    height: 70vh;
+}
+
+/* MODAL ATTRIBUTES*/
+.modal1 {
+    height: auto;
+
 }

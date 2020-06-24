@@ -3,6 +3,8 @@ M.AutoInit();
 $(document).ready(function () {
     $("#home").load("home.html");
     $("#services").load("services.html");
+    $("#projects").load("projects.html");
+    $("#careers").load("careers.html");
 });
 
 function clickHome() {
