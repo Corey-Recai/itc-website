@@ -1,13 +1,15 @@
 $(document).ready(function () {
-    $('.modal').modal()
+    $('.modal').modal({
+        endingTop: '5%',
+    });
+    $('#modal2').modal({
+        endingTop: '20%',
+    });
 });
-
-
-
 var options = {
     pdfOpenParams: {
         view: 'FitH'
     }
 };
 
-PDFObject.embed("/pdf/ITC Steam Certification and Case Study.pdf", "#modal-content", options);
+PDFObject.embed("/pdf/ITC Steam Certification and Case Study.pdf", "#pdf-modal", options);

@@ -35,7 +35,7 @@ a {
 }
 
 .nav-spacer {
-    height: 6rem;
+    height: 7em;
 }
 
 .nav-content {
@@ -219,6 +219,10 @@ input[type=range]::-ms-thumb {
     height: 100%;
     width: 100%;
 }
+
+.vendor-img {
+    vertical-align: middle;
+}
 /* TEXT ATTRIBUTES */
 .h5 {
     font-size: medium;
@@ -265,3 +269,19 @@ input[type=range]::-ms-thumb {
     height: auto;
 
 }
+
+#pdf-modal {
+    height: 90vh;
+    width: auto;
+}
+
+.modal {
+    max-height: 100%;
+}
+
+/* MAP ATTRIBUTES*/
+
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
