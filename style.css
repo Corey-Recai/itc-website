@@ -15,6 +15,10 @@ a {
     cursor: pointer;
 }
 
+.location-link {
+    color:#01367a;
+}
+
 .text-link:hover {
     text-decoration: underline;
 }
