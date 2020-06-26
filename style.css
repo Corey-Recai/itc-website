@@ -26,7 +26,7 @@ a {
 /* NAVIGATION ATTRIBUTES */
 #tagline {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 .nav-divider {
@@ -202,11 +202,9 @@ input[type=range]::-ms-thumb {
     height: 40vh;
 }
 
-/* #sticky-widget {
-    position: -webkit-fixed;
-    position: fixed;
-    padding-right: 23.5%;
-} */
+#services-widget {
+    font-size: 1.5em;
+}
 
 .no-padding {
     padding: 0px;
