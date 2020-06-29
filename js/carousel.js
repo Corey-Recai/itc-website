@@ -1,10 +1,7 @@
-
 $(document).ready(function () {
     $('#home-carousel-1').carousel({
-        dist: 0,
         fullWidth: true,
-        indicators: false,
-        noWrap: false
+        indicators: false
     });
 
     autoplay()
@@ -18,8 +15,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#home-carousel-2').carousel({
         fullWidth: true,
-        indicators: false,
-        noWrap: false
+        indicators: false
     });
 
     autoplay()
@@ -27,5 +23,20 @@ $(document).ready(function () {
     function autoplay() {
         $('#home-carousel-2').carousel('next');
         setTimeout(autoplay, 10000);
+    }
+});
+
+$(document).ready(function () {
+    $('#contact-carousel-1').carousel({
+        fullWidth: true,
+        indicators: false,
+        numVisible: 6
+    }).height(600);
+
+    autoplay()
+
+    function autoplay() {
+        $('#contact-carousel-1').carousel('next');
+        setTimeout(autoplay, 5000);
     }
 });

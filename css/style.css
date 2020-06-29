@@ -120,6 +120,10 @@ footer {
   padding-right: 1rem;
 }
 
+.body-img-3 {
+  padding-left: 1rem;
+}
+
 .no-border {
   border-bottom: 0px solid;
 }
@@ -306,6 +310,7 @@ input[type=range]::-ms-thumb {
   width: 100%;
 }
 
+/* CAROUSEL ATTRIBUTES*/
 #home-carousel-1 {
   min-height: 450px;
 }
@@ -314,6 +319,20 @@ input[type=range]::-ms-thumb {
   min-height: 650px;
 }
 
+.vendor-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact-carousel-1 {
+  min-height: 250px;
+}
+
+#mobile-vendor-row {
+  height: 250px;
+}
+
+/* CONTACT PAGE ATTRIBUTES */
 @media only screen and (max-width: 600px) {
   .navbar-fixed {
     height: 11.2vh;
@@ -340,6 +359,9 @@ input[type=range]::-ms-thumb {
     -webkit-transform: translate(-50%, -20%);
             transform: translate(-50%, -20%);
     height: 1rem;
+  }
+  #contact-row-1 {
+    font-size: 0.9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

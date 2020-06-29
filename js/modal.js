@@ -3,7 +3,7 @@ $(document).ready(function () {
         endingTop: '5%',
     });
     $('#modal2').modal({
-        endingTop: '20%',
+        endingTop: '10%',
     });
 });
 var options = {
