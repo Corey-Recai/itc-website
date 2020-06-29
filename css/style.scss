@@ -260,6 +260,12 @@ input[type=range]::-ms-thumb {
     vertical-align: middle;
 }
 
+#itc-artwork {
+    height: auto;
+    width: 150px;
+    
+}
+
 /* TEXT ATTRIBUTES */
 .h5 {
     font-size: medium;
@@ -375,12 +381,8 @@ input[type=range]::-ms-thumb {
         font-size: xx-small;
     }
 
-    #itc-car {
-        z-index: 1;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, -20%);
-        height: 1rem;
+    #itc-car-mobile {
+        height: 4rem;
     }
 
     #contact-row-1 {

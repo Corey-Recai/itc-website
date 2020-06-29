@@ -1,73 +1,46 @@
-<?php
-if(!isset($_POST['submit']))
-{
-	//This page should not be accessed directly. Need to submit the form.
-    $message = "error; you need to submit the form!";
-    echo "<script type='text/javascript'>alert('$message');</script>";
-    header('Location: contact.html');
-    
+<?php // ----------------------------------------- // The Web Help .com
+// ----------------------------------------- // remember to replace your@email.com with your own email address lower in this code.
+// load smtp variables
+//$smtp = Mail::factory('smtp', array(
+// 'host' => 'ssl://smtp.gmail.com',
+// 'port' => '465',
+// 'auth' => true,
+// 'username' => 'sohosolutionsinc',
+// 'password' => 'usps^5low$'
+//));
+// load the swift library to send emails because Azure doesn't allow PHP to send emails
+require_once '/swift/lib/swift_required.php';
+$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
+    ->setUsername('sohosolutionsinc')
+    ->setPassword('usps^5low$');
+$mailer = Swift_Mailer::newInstance($transport);
+// load the variables form address bar
+$name = $_REQUEST['first_name']." ".$_REQUEST['last_name'];
+$subject = $_REQUEST['subject'];
+$message = $_REQUEST['message'];
+$from = $_REQUEST['email'];
+$verif_box = $_REQUEST['verif_box'];
+// remove the backslashes that normally appears when entering " or '
+$name = stripslashes($name);
+$message = stripslashes($message);
+$subject = stripslashes($subject);
+$from = stripslashes($from); // check to see if verificaton code was correct
+if (md5($verif_box) . 'a4xn' == $_COOKIE['tntcon']) {
+    // if verification code was correct send the message and show this page
+    $message_send = Swift_Message::newInstance($subject)
+        ->setFrom([$from => $name])
+        ->setTo(['crecai@itcservices.com'])
+        ->setBody($message);
+    // delete the cookie so it cannot sent again by refreshing this page
+    setcookie('tntcon', '');
+} else {
+    // if verification code was incorrect then return to contact page and show error
+    header(
+        'Location:' .
+            $_SERVER['HTTP_REFERER'] .
+            "?subject=$subject&from=$from&message=$message&wrong_code=true"
+    );
+    exit();
 }
-$name = $_POST['first_name'] . $_POST['last_name'];
-$visitor_email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
-
-//Validate first
-if(empty($name)||empty($visitor_email)) 
-{
-    $message = "Name and email are mandatory!";
-    echo "<script type='text/javascript'>alert('$message');</script>";
-    header('Location: contact.html');
-    exit;
-}
-
-if(IsInjected($visitor_email))
-{
-    $message = "Bad email value!";
-    echo "<script type='text/javascript'>alert('$message');</script>";
-    header('Location: contact.html');
-    exit;
-}
-
-$email_from = 'crecai@itcservices.com';//<== update the email address
-$email_subject = "New Message from itcservices.com";
-$email_body = 
-    
-    "Name: $name.\n".
-    "Email: $visitor_email.\n".
-    "Subject: $subject.\n".
-    "Message: $message.\n".
-    
-$to = "crecai@itcservices.com";//<== update the email address
-$headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
-//Send the email!
-mail($to,$email_subject,$email_body);
-//done. redirect to thank-you page.
-header('Location: ../index.html#contact');
-
-
-// Function to validate against any email injection attempts
-function IsInjected($str)
-{
-  $injections = array('(\n+)',
-              '(\r+)',
-              '(\t+)',
-              '(%0A+)',
-              '(%0D+)',
-              '(%08+)',
-              '(%09+)'
-              );
-  $inject = join('|', $injections);
-  $inject = "/$inject/i";
-  if(preg_match($inject,$str))
-    {
-    return true;
-  }
-  else
-    {
-    return false;
-  }
-}
-   
-?> 
+$result = $mailer->send($message_send);
+?>
