@@ -48,38 +48,38 @@
     <div class="col s12 m12 l6">
         <section id="contact-section-2">
             <div class="row no-bottom-margin">
-                <form class="col s12 m12 l12 itc-blue">
+                <form class="col s12 m12 l12 itc-blue" method="post" name="contactForm" action="/php/email.php">
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
+                            <input id="first_name" name="first_name" type="text" class="validate">
                             <label for="first_name">First Name</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
+                            <input id="last_name" name="last_name" type="text" class="validate">
                             <label for="last_name">Last Name</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
+                            <input id="email" name="email" type="email" class="validate">
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="subject" type="text" class="validate">
+                            <input id="subject" name="subject" type="text" class="validate">
                             <label for="subject">Subject</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <textarea id="message" type="password" class="materialize-textarea validate"></textarea>
+                            <textarea id="message" name="message" type="text" class="materialize-textarea validate"></textarea>
                             <label for="message">Message</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="submit" type="submit" value="Submit"  onclick="submit();" class="btn btn-itc-blue">
+                            <input id="submit" type="submit" value="Submit" class="btn btn-itc-blue">
                         </div>
                     </div>
                 </form>
@@ -127,3 +127,4 @@
     type="text/javascript"></script>
 <script src="/js/map.js"></script>
 <script src="/js/email.js"></script>
+<script src="/js/jquery.serialize-object.min.js"></script>
