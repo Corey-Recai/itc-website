@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" href="/images/favicon.svg"/>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script data-cfasync="false" src="/js/email.js"></script>
+  <title>ITC Services | Your Single Source for HVAC Controls, Wireless Solutions, Security, Sub-Metering and
+    Mechanical Systems</title>
+</head>
+
+<body>
+
+  <div id="mobile-sticky-navbar">
+
+    <nav class="nav-extended itc-blue-background">
+      <div id="tagline" class="white black-text bold">
+        <div class="container"><span>Serving the New York Metropolitan Area since
+            1979</span></div>
+      </div>
+      <div class="nav-wrapper center-align">
+        <div class="nav-divider"></div>
+        <div class="valign-wrapper">
+          <a href="#" data-target="sidenav" class="sidenav-trigger" id="sidenav-trigger"><i
+              class="material-icons">menu</i></a>
+        </div>
+        <div class="nav-spacer hide-on-med-and-down"></div>
+        <a href="#"><img id="logo-img" class="responsive-img" src="/images/itc-logo.svg" alt=""></a>
+      </div>
+      <div class="nav-content center-align">
+        <div class="nav-divider hide-on-large-only "></div>
+        <div class="tabs tabs-transparent hide-on-med-and-down">
+          <li class="tab"><a id="home-link" class="active" href="#home">HOME</a></li>
+          <li class="tab"><a id="services-link" href="#services">SERVICES</a></li>
+          <li class="tab"><a id="projects-link" href="#projects">PROJECTS</a></li>
+          <li class="tab"><a id="careers-link" href="#careers">CAREERS</a></li>
+          <li class="tab"><a id="contact-link" href="#contact">CONTACT US</a></li>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="sidenav">
+    <div id="sidenav-overlay">
+      <li class="tab"><a onclick="clickHome()">HOME</a></li>
+      <li class="tab"><a onclick="clickServices()">SERVICES</a></li>
+      <li class="tab"><a onclick="clickProjects()">PROJECTS</a></li>
+      <li class="tab"><a onclick="clickCareers()">CAREERS</a></li>
+      <li class="tab"><a onclick="clickContact()">CONTACT US</a></li>
+      <li><a class="sidenav-close hide" id="sidenav-close" href="#!"></a></li>
+    </div>
+  </ul>
+
+
+  <div class="background-overlay">
+    <div id="body-container" class="container itc-white-container">
+      <div id="home" class="row"></div>
+      <div id="services" class="row"></div>
+      <div id="projects" class="row"></div>
+      <div id="careers" class="row"></div>
+      <div id="contact" class="row"></div>
+
+      <footer class="itc-blue-background hide-on-small-only">
+        <div class="nav-divider"></div>
+        <div class="row no-bottom-margin">
+          <div class="page-container white-text">
+            <div class="center-align">
+              <img class="responsive-img" id="itc-car" src="/images/itc-car.png" alt="">
+            </div>
+            <div class="left">
+              <p class="bold">
+                HVAC CONTROLS,<br>
+                WIRELESS SOLUTIONS,<br>
+                SECURITY, SUB-METERING <br>
+                AND MECHANICAL SYSTEMS <br>
+              </p>
+            </div>
+            <div class="right">
+              <p class="bold rtl">
+                SYSTEM DESIGNS •<br>
+                CONTRACTING •<br>
+                INSTALLATIONS •<br>
+                SERVICE AND MAINTENANCE •<br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-divider"></div>
+        <div class="row white no-bottom-margin">
+          <div class="page-container">
+            <div class="left">
+              <span class="bold"><a class="black-text"
+                  href="https://www.google.com/maps?saddr=My+Location&daddr=Independent+Temp+Control+Services,+11719+14th+Rd,+College+Point,+NY+11356"
+                  target="_blank">117-19 14th Road, College Point, NY 11356</a></span>
+            </div>
+            <div class="right">
+              <span class="bold">Phone: <a class="black-text" href="tel:1-718-939-8801">718.939.8801</a> | Fax: <a
+                  class="black-text" href="fax:1-718-939-8147">718.939.8147</a></span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <footer id="mobile-footer" class="itc-blue-background hide-on-med-and-up">
+        <div class="nav-divider"></div>
+        <div class="row no-bottom-margin">
+          <div class="page-container white-text">
+            <div>
+              <div class="right">
+                <img class="valign-wrapper" id="itc-artwork" src="/images/itc-artwork.svg" alt="">
+              </div>
+              <p class="bold">
+                HVAC CONTROLS,<br>
+                WIRELESS SOLUTIONS,<br>
+                SECURITY, SUB-METERING <br>
+                AND MECHANICAL SYSTEMS <br>
+              </p>
+            </div>
+            <div>
+              <div class="left">
+                <img class="responsive-img" id="itc-car-mobile" src="/images/itc-car.png" alt="">
+              </div>
+              <p class="bold rtl">
+                SYSTEM DESIGNS •<br>
+                CONTRACTING •<br>
+                INSTALLATIONS •<br>
+                SERVICE AND MAINTENANCE •<br>
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="nav-divider"></div>
+        <div class="row white no-bottom-margin">
+          <div class="page-container">
+            <div class="center-align">
+              <span class="bold"><a class="black-text"
+                  href="https://www.google.com/maps?saddr=My+Location&daddr=Independent+Temp+Control+Services,+11719+14th+Rd,+College+Point,+NY+11356"
+                  target="_blank">117-19 14th Road, College Point, NY 11356</a></span><br>
+              <span class="bold">Phone: <a class="black-text" href="tel:1-718-939-8801">718.939.8801</a> | Fax: <a
+                  class="black-text" href="fax:1-718-939-8147">718.939.8147</a></span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Load Materialize Scripts, Font Awesome and jQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Load Font Awesome -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <!-- End Load Materialize Scripts, Font Awesome and jQuery-->
+  <!-- Load PDF Object Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.js"></script>
+  <!-- End Load PDF Object Script -->
+  <!-- Load Document Scripts -->
+  <script src='/js/script.js'></script>
+  <script src='/js/audio-player.js'></script>
+  <script src="/js/weather-widget.js"></script>
+  <script src="/js/mobile-style.js"></script>
+  <!-- End Load Document Scripts -->
+</body>
+
+</html>

@@ -1,8 +1,11 @@
 $(document).ready(function () {
-    $('.modal').modal({
+    $('#modal1').modal({
         endingTop: '5%',
     });
     $('#modal2').modal({
+        endingTop: '10%',
+    });
+    $('#modal-message').modal({
         endingTop: '10%',
     });
 });

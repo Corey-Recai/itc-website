@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#services").load("services.html");
     $("#projects").load("projects.html");
     $("#careers").load("careers.html");
-    $("#contact").load("/php/contact.php");
+    $("#contact").load("contact.html");
 });
 
 function clickHome() {
