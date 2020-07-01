@@ -40,3 +40,18 @@ $(document).ready(function () {
         setTimeout(autoplay, 5000);
     }
 });
+
+$(document).ready(function () {
+    $('#safety-carousel').carousel({
+        fullWidth: true,
+        indicators: false,
+        numVisible: 6
+    }).height(600).set(1);
+
+    autoplay()
+
+    function autoplay() {
+        $('#safety-carousel').carousel('next');
+        setTimeout(autoplay, 5000);
+    }
+});

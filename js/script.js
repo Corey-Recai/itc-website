@@ -6,6 +6,7 @@ $(document).ready(function () {
     $("#projects").load("projects.html");
     $("#careers").load("careers.html");
     $("#contact").load("contact.html");
+    $('.tooltipped').tooltip();
 });
 
 function clickHome() {

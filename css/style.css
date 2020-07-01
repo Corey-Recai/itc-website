@@ -253,6 +253,24 @@ input[type=range]::-ms-thumb {
   width: 150px;
 }
 
+#hepa-filter {
+  width: 20rem;
+  height: auto;
+}
+
+#itc-safe-popup {
+  width: 20rem;
+  height: auto;
+}
+
+#safety-button {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(8%, 280%);
+          transform: translate(8%, 280%);
+}
+
 /* TEXT ATTRIBUTES */
 .h5 {
   font-size: medium;
@@ -307,6 +325,10 @@ input[type=range]::-ms-thumb {
 
 .modal {
   max-height: 100%;
+}
+
+#safety-modal {
+  height: 445px !important;
 }
 
 /* MAP ATTRIBUTES*/

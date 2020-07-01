@@ -8,6 +8,9 @@ $(document).ready(function () {
     $('#modal-message').modal({
         endingTop: '10%',
     });
+    $('#safety-modal').modal({
+        endingTop: '10%',
+    });
 });
 var options = {
     pdfOpenParams: {
