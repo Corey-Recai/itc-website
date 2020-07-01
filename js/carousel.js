@@ -44,8 +44,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#safety-carousel').carousel({
         fullWidth: true,
-        indicators: false,
-        numVisible: 6
+        indicators: true,
     }).height(600).set(1);
 
     autoplay()

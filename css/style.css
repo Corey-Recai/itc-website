@@ -328,7 +328,7 @@ input[type=range]::-ms-thumb {
 }
 
 #safety-modal {
-  height: 445px !important;
+  height: 61vh !important;
 }
 
 /* MAP ATTRIBUTES*/
@@ -359,6 +359,16 @@ input[type=range]::-ms-thumb {
   height: 250px;
 }
 
+#safey-presentation {
+  width: 100%;
+  height: 60vh;
+}
+
+#home-video {
+  width: 100%;
+  height: auto;
+}
+
 /* CONTACT PAGE ATTRIBUTES */
 @media only screen and (max-width: 600px) {
   .navbar-fixed {
@@ -384,6 +394,13 @@ input[type=range]::-ms-thumb {
   }
   #contact-row-1 {
     font-size: 0.9rem;
+  }
+  #safety-button {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(62%, -455%);
+            transform: translate(62%, -455%);
   }
 }
 /*# sourceMappingURL=style.css.map */

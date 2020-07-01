@@ -340,7 +340,7 @@ input[type=range]::-ms-thumb {
 }
 
 #safety-modal {
-    height: 445px !important;
+    height: 61vh !important;
 }
 
 /* MAP ATTRIBUTES*/
@@ -371,6 +371,16 @@ input[type=range]::-ms-thumb {
 
 #mobile-vendor-row {
     height: 250px;
+}
+
+#safey-presentation {
+    width: 100%;
+    height: 60vh;
+}
+
+#home-video {
+    width: 100%;
+    height: auto;
 }
 
 /* CONTACT PAGE ATTRIBUTES */
@@ -408,6 +418,13 @@ input[type=range]::-ms-thumb {
 
     #contact-row-1 {
         font-size: 0.9rem;
+    }
+
+    #safety-button{
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        transform: translate(62%, -455%);
     }
 
 }
