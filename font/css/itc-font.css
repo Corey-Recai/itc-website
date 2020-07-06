@@ -18,6 +18,7 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale
 }
+.itc-B:before{content:'\0042';}
 .itc-C:before{content:'\0043';}
 .itc-I:before{content:'\0049';}
 .itc-T:before{content:'\0054';}

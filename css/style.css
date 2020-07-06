@@ -370,6 +370,36 @@ input[type=range]::-ms-thumb {
 }
 
 /* CONTACT PAGE ATTRIBUTES */
+.input-field input[type=text]:focus + label {
+  color: #01367a !important;
+}
+
+.input-field input[type=email]:focus + label {
+  color: #01367a !important;
+}
+
+.input-field textarea:focus + label {
+  color: #01367a !important;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #01367a !important;
+  -webkit-box-shadow: 0 1px 0 0 #01367a !important;
+          box-shadow: 0 1px 0 0 #01367a !important;
+}
+
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #01367a !important;
+  -webkit-box-shadow: 0 1px 0 0 #01367a !important;
+          box-shadow: 0 1px 0 0 #01367a !important;
+}
+
+.input-field textarea:focus {
+  border-bottom: 1px solid #01367a !important;
+  -webkit-box-shadow: 0 1px 0 0 #01367a !important;
+          box-shadow: 0 1px 0 0 #01367a !important;
+}
+
 @media only screen and (max-width: 600px) {
   .navbar-fixed {
     height: 11.2vh;

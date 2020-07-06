@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="http://www.itcservices.com/images/favicon.svg" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ITC Services | Your Single Source for HVAC Controls, Wireless Solutions, Security, Sub-Metering and
+        Mechanical Systems</title>
+</head>
+<style>
+    body {
+        background-image: url("http://www.itcservices.com/images/background(3).png");
+        background-position: 0%;
+    }
+
+    .warning-bar {
+        visibility: hidden;
+    }
+
+    .background-overlay {
+        background-color: rgba(150, 150, 150, 0.1);
+        height: 100vh;
+    }
+
+    .itc-blue-background {
+        background-color: #01367a;
+    }
+
+    .btn-itc-blue {
+        background-color: #01367a;
+    }
+
+    .btn-itc-blue:hover {
+        background-color: #01367a;
+    }
+
+    .btn-itc-blue:enabled {
+        background-color: #01367a;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        background-color: #01367a;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        background-color: #01367a;
+    }
+
+    input[type=range]::-ms-thumb {
+        background-color: #01367a;
+    }
+
+    .itc-blue {
+        color: #01367a;
+    }
+
+    #message-container {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        padding-top: rem;
+    }
+
+    #message {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+</style>
+
+<body>
+    <div class="background-overlay"></div>
+    <div id="message-container">
+        <div id="message" class="container center-align itc-blue-background white-text">
+            <div>
+                <img class="responsive-img" src="http://www.itcservices.com/images/itc-logo.svg" alt="">
+            </div>
+            <div>
+                <h2>Thank you for contacting ITC Services.</h2>
+                <h2>A representative will be in touch with you shortly.</h2>
+                <h5>Please click here if this page does not redirect automatically in <span id="count">5</span> seconds.
+                </h5>
+                <a class="btn waves-effect waves-light pulse white itc-blue"
+                    href="http://www.itcservices.com#contact">Click here</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+
+            (function () {
+                var counter = 5;
+
+                setInterval(function () {
+                    counter--;
+                    if (counter >= 0) {
+                        span = document.getElementById("count");
+                        span.innerHTML = counter;
+                    }
+                    // Display 'counter' wherever you want to display it.
+                    if (counter === 0) {
+                        //    alert('this is where it happens');
+                        clearInterval(counter);
+                    }
+
+                }, 1000);
+
+            })();
+
+        };
+        setTimeout(function () {
+            window.top.location.href = "http://www.itcservices.com#contact";
+        }, 5000);
+    </script>
+    <!-- Load Materialize Scripts, Font Awesome and jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Load Font Awesome -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- End Load Materialize Scripts, Font Awesome and jQuery-->
+</body>
+
+</html>

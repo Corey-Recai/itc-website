@@ -263,10 +263,10 @@ input[type=range]::-ms-thumb {
 #itc-artwork {
     height: auto;
     width: 150px;
-    
+
 }
 
-#hepa-filter{
+#hepa-filter {
     width: 20rem;
     height: auto;
 }
@@ -276,7 +276,7 @@ input[type=range]::-ms-thumb {
     height: auto;
 }
 
-#safety-button{
+#safety-button {
     z-index: 1;
     position: absolute;
     left: 50%;
@@ -299,11 +299,6 @@ input[type=range]::-ms-thumb {
 
 .shadow {
     text-shadow: 2px 2px 5px black;
-}
-
-#logo-text {
-   
-    
 }
 
 .project-title {
@@ -390,6 +385,33 @@ input[type=range]::-ms-thumb {
 
 /* CONTACT PAGE ATTRIBUTES */
 
+.input-field input[type=text]:focus+label {
+    color: #01367a !important;
+}
+
+.input-field input[type=email]:focus+label {
+    color: #01367a !important;
+}
+
+.input-field textarea:focus+label {
+    color: #01367a !important;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #01367a !important;
+    box-shadow: 0 1px 0 0 #01367a !important;
+}
+
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #01367a !important;
+    box-shadow: 0 1px 0 0 #01367a !important;
+}
+
+.input-field textarea:focus {
+    border-bottom: 1px solid #01367a !important;
+    box-shadow: 0 1px 0 0 #01367a !important;
+}
+
 
 
 @media #{$small-and-down} {
@@ -425,7 +447,7 @@ input[type=range]::-ms-thumb {
         font-size: 0.9rem;
     }
 
-    #safety-button{
+    #safety-button {
         z-index: 1;
         position: absolute;
         left: 50%;
