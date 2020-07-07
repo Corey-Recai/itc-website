@@ -16,7 +16,7 @@ var options = {
     pdfOpenParams: {
         view: 'FitH'
     },
-    fallbackLink: '<div class="container"><p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="/pdf/ITC Steam Certification and Case Study.pdf">Download PDF</a></p></div>'
+    fallbackLink: '<div class="container"><p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="http://www.itcservices.com/pdf/ITC Steam Certification and Case Study.pdf">Download PDF</a></p></div>'
 };
 
-PDFObject.embed("/pdf/ITC Steam Certification and Case Study.pdf", "#pdf-modal", options);
+PDFObject.embed("http://www.itcservices.com/pdf/ITC Steam Certification and Case Study.pdf", "#pdf-modal", options);

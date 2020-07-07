@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-image: url("/images/background(3).png");
+  background-image: url("http://www.itcservices.com/images/background(3).png");
 }
 
 a {
@@ -60,7 +60,7 @@ a {
 }
 
 .sidenav {
-  background-image: url("/images/background(3).png");
+  background-image: url("http://www.itcservices.com/images/background(3).png");
   background-position: center;
 }
 
@@ -211,14 +211,14 @@ input[type=range]::-ms-thumb {
 }
 
 #v-flag {
-  background-image: url("/images/v-flag.jpg");
+  background-image: url("http://www.itcservices.com/images/v-flag.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .guage {
-  background-image: url("/images/gauge.jpg");
+  background-image: url("http://www.itcservices.com/images/gauge.jpg");
   background-size: cover;
 }
 
